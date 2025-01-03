@@ -30,22 +30,32 @@ const NavBar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+
                             <li className="nav-item">
-                                <NavLink to='/' className={({isActive}) => isActive ? 'navActive' : 'pending'} aria-current="page">Home</NavLink>
+                                <NavLink to='/' className={({isActive}) => isActive ? 'navActive' : 'pending'}
+                                         aria-current="page">Home</NavLink>
                             </li>
+
                             <li className="nav-item">
-                                <NavLink to='/about' className={({isActive}) => isActive ? 'navActive' : 'pending'} aria-current="page">About Us</NavLink>
+                                <NavLink to='/about' className={({isActive}) => isActive ? 'navActive' : 'pending'}
+                                         aria-current="page">About Us</NavLink>
                             </li>
+
                             <li className="nav-item">
-                                <NavLink to='/service' className={({isActive}) => isActive ? 'navActive' : 'pending'} aria-current="page">Service</NavLink>
+                                <NavLink to='/allprojects'
+                                         className={({isActive}) => isActive ? 'navActive' : 'pending'}
+                                         aria-current="page">All Projects</NavLink>
                             </li>
+
                             <li className="nav-item">
-                                <NavLink to='/contact' className={({isActive}) => isActive ? 'navActive' : 'pending'} aria-current="page">Contact Us</NavLink>
+                                <NavLink to='/service' className={({isActive}) => isActive ? 'navActive' : 'pending'}
+                                         aria-current="page">Service</NavLink>
                             </li>
+
                         </ul>
                     </div>
                     <div className="cta-button">
-                        <Link to='/' className='btn btn-success'>Contact Us</Link>
+                        <Link to='/contact' className='btn btn-success'>Contact Us</Link>
                     </div>
                 </div>
             </nav>

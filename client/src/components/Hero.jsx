@@ -47,7 +47,7 @@ const Hero = () => {
                             <h1>Empowering your <br /> <span>online venture</span></h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ducimus eligendi
                                 explicabo in, inventore ipsa minima molestiae </p>
-                            <Link to='/' className="btn btn-success">Contact Us</Link>
+                            <Link to='/contact' className="btn btn-success">Contact Us</Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6">

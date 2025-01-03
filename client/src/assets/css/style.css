@@ -294,7 +294,6 @@ body{
 .work .image-bg:hover .overlay {
     left: 0;
 }
-
 /* Work Part End */
 
 /* Testimonial Part Start */
@@ -447,6 +446,72 @@ body{
     color: var(--tertiary-color);
 }
 /* Footer Part End */
+
+
+/* All Project Part Starts */
+.allProjects .text h2{
+    font-family: var(--font-Hind-Vadodara), sans-serif;
+    font-weight: bold;
+}
+
+.allProjects .text p{
+    font-family: var(--font-Hind-Vadodara), sans-serif;
+    font-size: 16px;
+}
+
+.allProjects .image-bg{
+    background-color: var(--fourth-bgcolor);
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.allProjects .image-bg img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.allProjects a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.allProjects .image-bg p{
+    font-family: var(--font-Hind-Vadodara), sans-serif;
+    margin-top: 10px;
+}
+
+.allProjects .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.7);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tertiary-color);
+    font-size: 18px;
+    border-radius: 5px;
+    transition: left 0.5s ease;
+}
+
+.allProjects .image-bg:hover .overlay {
+    left: 0;
+}
+/* All Project Part End */
+
+/* Contact Part Start */
+.contact .text h2{
+    font-family: var(--font-Hind-Vadodara), sans-serif;
+}
+/* Contact Part End */
 
 /* Responsive Part Start */
 
