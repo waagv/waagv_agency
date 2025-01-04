@@ -4,7 +4,7 @@ export const PORT = 8000
 export const IMAGE_PATH = "http://localhost:8000"
 
 
-export const DATABASE = 'mongodb+srv://mdatikurrahman00022:<db_password>@cluster0.2xurj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+export const DATABASE = 'mongodb+srv://mdatikurrahman00022:4kdGoHB0UgyrmHqr@cluster0.2xurj.mongodb.net/waagv?retryWrites=true&w=majority&appName=Cluster0'
 export const JWT_KEY = 'ABC12341241234'
 export const JWT_EXPIRE_TIME = 30*24*60*60
 
