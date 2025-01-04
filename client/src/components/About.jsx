@@ -22,7 +22,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className="about py-5">
+        <section id="aboutus" className="about py-5">
             <div className="container">
                 <div className="row">
                     <div className="heading col-12 col-lg-3">
