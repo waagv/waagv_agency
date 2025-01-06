@@ -1,5 +1,7 @@
 import React, {useEffect} from "react";
 import Slider from "react-slick";
+import mozahid from "../assets/images/mozahid-bg.png";
+import atikur from "../assets/images/atikur_rahman.png";
 import image1 from "../assets/images/hero.png";
 import ScrollReveal from "scrollreveal";
 
@@ -89,14 +91,14 @@ const Team = () => {
                 </div>
                 <Slider {...settings}>
                     <div className="team-details">
-                        <img src={image1} alt="image"/>
-                        <h5>Jhon Doe</h5>
-                        <p>Web Designer</p>
+                        <img src={mozahid} alt="image"/>
+                        <h5>Al Mozahid</h5>
+                        <p>Founder & CEO | Front-end Developer</p>
                     </div>
                     <div className="team-details">
-                        <img src={image1} alt="image"/>
-                        <h5>Michell Mars</h5>
-                        <p>Backend Developer</p>
+                        <img src={atikur} alt="image"/>
+                        <h5>Atikur Rahman</h5>
+                        <p>Co-Founder & CTO | Full-stack Developer</p>
                     </div>
                     <div className="team-details">
                         <img src={image1} alt="image"/>

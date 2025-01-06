@@ -23,7 +23,7 @@ const WhyWebsite = () => {
 
     return (
         <section className='why py-5'>
-            <div className="container">
+            <div className="container p-md-4 px-sm-5">
                 <h2>Why you should have a website?</h2>
                 <div className="row">
                     <div className="col-12 col-lg-6 gap-2">
@@ -33,7 +33,7 @@ const WhyWebsite = () => {
                                 consequuntur dolor doloribus facere harum </p>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-6 gap-2">
+                    <div className="col-12 col-lg-6 gap-2 small_device">
                         <div className="why-card">
                             <h4>Brand Building</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam beatae consectetur
@@ -42,14 +42,14 @@ const WhyWebsite = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-12 col-lg-6 gap-2">
+                    <div className="col-12 col-lg-6 gap-2 small_device">
                         <div className="why-card">
                             <h4>Brand Building</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam beatae consectetur
                                 consequuntur dolor doloribus facere harum </p>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-6 gap-2">
+                    <div className="col-12 col-lg-6 gap-2 small_device">
                         <div className="why-card">
                             <h4>Brand Building</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam beatae consectetur

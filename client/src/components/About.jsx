@@ -22,13 +22,13 @@ const About = () => {
     }, []);
 
     return (
-        <section className="about py-5">
+        <section className="about">
             <div className="container">
                 <div className="row">
                     <div className="heading col-12 col-lg-3">
                         <h2>About<span>waagv</span></h2>
                     </div>
-                    <div className="col-12 col-lg-9">
+                    <div className="col-12 col-lg-9 px-sm-5">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae deleniti dicta eos dolor sit amet, consectetur adipisicing elit</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae deleniti dicta eos dolor sit amet, consectetur adipisicing elit dolor sit amet, consectetur adipisicing elit dolor sit amet, consectetur adipisicing elit</p>
                     </div>

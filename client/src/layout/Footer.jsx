@@ -1,37 +1,37 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import image from "../assets/images/yellow_png.png";
 
 const Footer = () => {
     return (
         <footer className="footer py-5">
             <div className="container">
-                <img src="" alt="footer logo"/>
+                <img className='footer-logo' src={image} alt="footer logo"/>
                 <div className="row d-flex justify-content-between align-items-center mt-5">
-                    <div className="col-12 col-lg-4">
-                        <div className="contact d-flex align-items-center gap-5">
-                            <span><i className="bi bi-geo-alt"></i></span>
-                            <div className="text">
-                                <h4>Address</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-lg-4">
-                        <div className="contact d-flex justify-content-lg-center align-items-center gap-5">
+                    <div className="col-12 col-lg-4 col-md-6">
+                        <div className="contact d-flex justify-content-lg-start align-items-center gap-4">
                             <span><i className="bi bi-phone-flip"></i></span>
                             <div className="text">
                                 <h4>Phone</h4>
-                                <p>+8801993996162 </p>
-                                <p>+8801993996162 </p>
+                                <p>+1 ( 204 ) 890 6579</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-4">
-                        <div className="contact d-flex justify-content-lg-end align-items-center gap-5">
+                    <div className="col-12 col-lg-4 col-md-6">
+                        <div className="contact d-flex justify-content-lg-start align-items-center gap-4">
                             <span><i className="bi bi-envelope-open"></i></span>
                             <div className="text">
                                 <h4>Email</h4>
-                                <p>agency@gmail.com </p>
+                                <p>waagvit@gmail.com </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="footer_address col-12 col-lg-4 col-md-6">
+                        <div className="contact d-flex justify-content-lg-start align-items-center gap-4 ">
+                            <span><i className="bi bi-geo-alt"></i></span>
+                            <div className="text">
+                                <h4>Address</h4>
+                                <p>1789 Pembina Hwy, Winnipeg, MB </p>
                             </div>
                         </div>
                     </div>

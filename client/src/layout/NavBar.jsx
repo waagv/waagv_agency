@@ -22,9 +22,9 @@ const NavBar = () => {
 
     return (
         <div className={`header sticky-top ${isScrolled ? 'scrolled' : ''}`}>
-            <nav className="navbar navbar-expand-lg py-3">
+            <nav className="navbar navbar-expand-lg py-4">
                 <div className="container">
-                    <Link to='/' className="navbar-brand">Agency logo</Link>
+                    <Link to='/' className="navbar-brand">waagv</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -45,7 +45,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div className="cta-button">
-                        <Link to='/' className='btn btn-success'>Contact Us</Link>
+                        <Link to='/' className='btn btn-success btn-primary btn-nav'>Contact Us</Link>
                     </div>
                 </div>
             </nav>

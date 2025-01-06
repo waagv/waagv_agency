@@ -80,25 +80,25 @@ const Testimonial = () => {
                 </div>
                 <Slider {...settings}>
                     <div className="comment p-4 bg-light">
-                        <span><i className="bi bi-phone-flip"></i></span>
+                        <span><i class="bi bi-quote"></i></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
                             provident ratione voluptatibus. </p>
                         <h5><span>-</span>Jhon Doe</h5>
                     </div>
                     <div className="comment p-4 bg-light">
-                        <span><i className="bi bi-phone-flip"></i></span>
+                        <span><i class="bi bi-quote"></i></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
                             provident ratione voluptatibus. </p>
                         <h5><span>-</span>Michell Mars</h5>
                     </div>
                     <div className="comment p-4 bg-light">
-                        <span><i className="bi bi-phone-flip"></i></span>
+                        <span><i class="bi bi-quote"></i></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
                             provident ratione voluptatibus. </p>
                         <h5><span>-</span>Mark Straw</h5>
                     </div>
                     <div className="comment p-4 bg-light">
-                        <span><i className="bi bi-phone-flip"></i></span>
+                        <span><i class="bi bi-quote"></i></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
                             provident ratione voluptatibus. </p>
                         <h5><span>-</span>Danis Lee</h5>

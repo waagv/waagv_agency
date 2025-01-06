@@ -82,10 +82,10 @@ const Work = () => {
     };
 
     return (
-        <section className='work py-5'>
+        <section className='work'>
             <div className="container">
                 <div>
-                    <div className="work-box p-5">
+                    <div className="work-box py-5">
                         <h2>Our Work</h2>
                         <p>A selection of signature projects</p>
                     </div>
