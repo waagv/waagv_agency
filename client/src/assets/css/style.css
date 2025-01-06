@@ -71,7 +71,7 @@ body{
 }
 /* Scroll Button Part End */
 
-/* NavBar Part Start */
+/* AdminNavBar Part Start */
 .navActive{
     padding: 8px 10px !important;
     background-color: var(--secondary-color);
@@ -99,7 +99,7 @@ body{
 .header .navbar-nav .nav-item{
     margin-right: 10px;
 }
-/* NavBar Part End */
+/* AdminNavBar Part End */
 
 /* Hero Part Start */
 .hero .text h1{
@@ -513,9 +513,34 @@ body{
 }
 /* Contact Part End */
 
-/* Responsive Part Start */
+/* Admin NavBar Part Start */
+.adminDashboard .profile img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
-/* NavBar Part */
+.dropdown-toggle::after {
+    display: none;
+}
+/* Admin NavBar Part End */
+
+/* Admin Sidebar Part Start */
+.sidebar .logo img{
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.sidebar .offcanvas-header h5{
+    font-family: var(--font-Hind-Vadodara), sans-serif;
+    margin-left: 45px;
+}
+/* Admin Sidebar Part End */
+
+/* Responsive Part Start */
 @media (max-width: 991.98px){
     /* Header Part */
     .header .navbar-nav{
