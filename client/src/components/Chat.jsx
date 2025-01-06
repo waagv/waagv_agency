@@ -19,7 +19,7 @@ const Chat = () => {
                 <div className="chat-box bg-light p-5">
                     <h2>Got something in mind?</h2>
                     <p>Book a meeting with me. I will be more than happy to answer your question.</p>
-                    <a href="mailto:waagvit@gmail.com" className="btn btn-dark">Let's Chat</a>
+                    <button className="btn btn-dark">Let's Chat</button>
                 </div>
             </div>
         </section>

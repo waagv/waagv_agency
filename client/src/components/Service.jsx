@@ -22,7 +22,7 @@ const Service = () => {
     }, []);
 
     return (
-        <section className="service">
+        <section className="service py-5">
             <div className="container">
                 {/* <div className="text">
                     <h2>Services we provide</h2>

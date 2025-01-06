@@ -90,42 +90,42 @@ const Work = () => {
                         <p>A selection of signature projects</p>
                     </div>
                     <Slider {...settings}>
-                        <Link to='/'>
-                            <div className="image-bg">
+                        <div className="image-bg">
+                            <Link to='/'>
                                 <img src={image1} alt="image"/>
                                 <p>Booking App</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
-                            </div>
-                        </Link>
-                        <Link to='/'>
-                            <div className="image-bg">
+                            </Link>
+                        </div>
+                        <div className="image-bg">
+                            <Link to='/'>
                                 <img src={image1} alt="image"/>
                                 <p>Booking App</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
-                            </div>
-                        </Link>
-                        <Link to='/'>
-                            <div className="image-bg">
+                            </Link>
+                        </div>
+                        <div className="image-bg">
+                            <Link to='/'>
                                 <img src={image1} alt="image"/>
                                 <p>Booking App</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
-                            </div>
-                        </Link>
-                        <Link to='/'>
-                            <div className="image-bg">
+                            </Link>
+                        </div>
+                        <div className="image-bg">
+                            <Link to='/'>
                                 <img src={image1} alt="image"/>
                                 <p>Booking App</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </Slider>
                 </div>
             </div>
