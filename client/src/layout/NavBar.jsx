@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
+import logo from "../assets/images/waagv-logo.webp";
 
 const NavBar = () => {
 
@@ -24,7 +25,9 @@ const NavBar = () => {
         <div className={`header sticky-top ${isScrolled ? 'scrolled' : ''}`}>
             <nav className="navbar navbar-expand-lg py-4">
                 <div className="container">
-                    <Link to='/' className="navbar-brand">waagv</Link>
+                    <Link to='/' className="navbar-brand nav-logo">
+                        <img src={logo} alt="nav logo"/>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

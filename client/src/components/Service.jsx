@@ -39,13 +39,13 @@ const Service = () => {
                     <div className="service-card-parent col-12 col-lg-3 col-md-6 col-sm-6 gap-2">
                         <div className="service-card">
                             <span><i class="bi bi-tools"></i></span>
-                            <p>Web<br/>revitalization</p>
+                            <p>Web<br/>maintenance</p>
                         </div>
                     </div>
                     <div className="service-card-parent col-12 col-lg-3 col-md-6 col-sm-6 gap-2">
                         <div className="service-card">
-                            <span><i class="bi bi-pencil-square"></i></span>
-                            <p>Responsive<br/>design</p>
+                            <span><i class="bi bi-cart-check"></i></span>
+                            <p>E-Commerce<br/>solutions</p>
                         </div>
                     </div>
                     <div className="service-card-parent col-12 col-lg-3 col-md-6 col-sm-6 gap-2">
