@@ -42,13 +42,13 @@ const NavBar = () => {
                             <li className="nav-item">
                                 {/*<NavLink to='/about' className={({isActive}) => isActive ? 'navActive' : 'pending'}*/}
                                 {/*         aria-current="page">About Us</NavLink>*/}
-                                <a href="#aboutus">About Us</a>
+                                <a href="#aboutus">About us</a>
                             </li>
 
                             <li className="nav-item">
                                 <NavLink to='/allprojects'
                                          className={({isActive}) => isActive ? 'navActive' : 'pending'}
-                                         aria-current="page">All Projects</NavLink>
+                                         aria-current="page">Projects</NavLink>
                             </li>
 
                             <li className="nav-item">

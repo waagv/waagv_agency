@@ -29,8 +29,9 @@ const About = () => {
                         <h2>About<span>waagv</span></h2>
                     </div>
                     <div className="col-12 col-lg-9 px-sm-5">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae deleniti dicta eos dolor sit amet, consectetur adipisicing elit</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae deleniti dicta eos dolor sit amet, consectetur adipisicing elit dolor sit amet, consectetur adipisicing elit dolor sit amet, consectetur adipisicing elit</p>
+                        <p>Empowering your business with expert web development solutions</p>
+                        <p>At <b>WAAGV</b>, we are a leading web development agency committed to delivering advanced, high-performance web solutions for <b>your</b> businesses. As a trusted partner in Canada, we empower small and medium-sized businesses to grow your online presence, attract more customers, and increase profitability. Whether you’re in plumbing, roofing, real estate, legal services, or e-commerce, we create professional websites that drive results and set your business up for long-term success
+                        </p>
                     </div>
                 </div>
             </div>

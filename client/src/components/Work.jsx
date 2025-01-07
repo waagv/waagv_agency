@@ -87,7 +87,7 @@ const Work = () => {
                 <div>
                     <div className="work-box py-5">
                         <h2>Our Work</h2>
-                        <p>A selection of signature projects</p>
+                        <p><q>Building websites that make an impact and drive growth</q></p>
                     </div>
                     <Slider {...settings}>
                         <div className="image-bg">

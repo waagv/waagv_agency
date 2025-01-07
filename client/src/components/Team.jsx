@@ -87,7 +87,7 @@ const Team = () => {
             <div className="container">
                 <div className="text">
                     <h2>Our brilliant team</h2>
-                    <p>These people work for best</p>
+                    <p>The team that goes above and beyond for your success</p>
                 </div>
                 <Slider {...settings}>
                     <div className="team-details">

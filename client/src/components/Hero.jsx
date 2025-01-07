@@ -45,8 +45,7 @@ const Hero = () => {
                     <div className="col-12 col-md-6">
                         <div className="text sm_center">
                             <h1>Empowering your <br /> <span>online venture</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ducimus eligendi
-                                explicabo in, inventore ipsa minima molestiae </p>
+                            <p>Take control of your online success with a reliable web development agency. Stand out with a professionally built website crafted to grow your business.</p>
                             <Link to='/' className="btn btn-success btn-primary">Contact Us</Link>
                         </div>
                     </div>

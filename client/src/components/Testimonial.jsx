@@ -76,7 +76,7 @@ const Testimonial = () => {
             <div className="container">
                 <div className="text">
                     <h2>Our Testimonials</h2>
-                    <p>What our client are saying</p>
+                    <p>Creating a foundation of trust for lasting success</p>
                 </div>
                 <Slider {...settings}>
                     <div className="comment p-4 bg-light">
