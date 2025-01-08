@@ -29,14 +29,14 @@ const WhyWebsite = () => {
                     <div className="col-12 col-lg-6 gap-2">
                         <div className="why-card">
                             <h4>Generate Leads 24/7</h4>
-                            <p>A website works around the clock to capture customer inquiries, answer common questions, and even process orders. This lead generation is crucial for businesses looking to convert visitors into long-term clients, even when your physical location is closed
+                            <p>A website works around the clock to capture customer inquiries, answer common questions, and even process orders. This lead generation is crucial for businesses looking to convert visitors into long-term clients, even when your physical location is closed.
                             </p>
                         </div>
                     </div>
                     <div className="col-12 col-lg-6 gap-2 small_device">
                         <div className="why-card">
                             <h4>Showcase Products & Services</h4>
-                            <p>A website provides an organized space to showcase your products, services, or portfolio. High-quality images, detailed descriptions, and testimonials can help educate potential customers and build excitement for your offerings.
+                            <p>A website provides an organized space to showcase your products, services, or portfolio. High-quality images, detailed descriptions, and testimonials can help educate potential customers and build excitement for your offerings. Grow smart with business.
                             </p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const WhyWebsite = () => {
                     <div className="col-12 col-lg-6 gap-2 small_device">
                         <div className="why-card">
                             <h4>Scale Your Business</h4>
-                            <p>As your business grows, a website provides the scalability to reach more customers and expand your services. E-commerce solutions, online booking systems, and integration with other digital tools enable your business to grow and manage larger volumes of traffic or sales seamlessly
+                            <p>As your business grows, a website provides the scalability to reach more customers and expand your services. E-commerce solutions, online booking systems, and integration with other digital tools enable your business to grow and manage larger volumes of traffic or sales seamlessly.
                             </p>
                         </div>
                     </div>

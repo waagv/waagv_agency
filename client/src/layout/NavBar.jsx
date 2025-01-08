@@ -60,7 +60,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div className="cta-button">
-                        <Link to='/' className='btn btn-success btn-nav btn-primary'>Contact Us</Link>
+                        <Link to='/' className='btn btn-nav button-primary'>Contact Us</Link>
                     </div>
                 </div>
             </nav>
