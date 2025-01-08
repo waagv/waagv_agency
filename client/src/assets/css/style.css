@@ -89,13 +89,27 @@ body{
 }
 
 
-.btn-primary{
+.button-primary{
     background-image: linear-gradient(to right, var(--primary-color) , var(--fifth-color));
     color: var(--tertiary-color);
     font-size: 14px;
     font-weight: var(--font-weight-bold);
     padding: 12px 20px;
     border: none;
+}
+
+
+.button-primary:hover{
+    color: var(--tertiary-color);
+}
+
+.button-chat{
+    background: transparent;
+    color: var(--tertiary-color)
+}
+
+.button-chat:hover{
+    color: var(--tertiary-color);
 }
 
 .btn-nav{
@@ -106,8 +120,8 @@ body{
 
 .btn-nav:hover{
     background: transparent;
-    border: 2px solid var(--primary-bgcolor);
-    color: var(--primary-color);
+    border: 2px solid var(--secondary-bgcolor);
+    color: var(--fifth-color);
 }
 
 .navActive{
@@ -167,6 +181,10 @@ body{
     font-size: 16px;
     color: var(--fifth-color);
     letter-spacing: .5px;
+}
+
+.hero .text a{
+    color: var(--fourth-color);
 }
 
 .hero .hero-img{
@@ -502,7 +520,7 @@ body{
 }
 .chat .chat-box{
     text-align: center;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 .chat .chat-box h2{
@@ -520,10 +538,11 @@ body{
 
 .chat .chat-box a{
     font-family: var(--font-Hind-Vadodara), sans-serif;
-    background-color: var(--tertiary-bgcolor);
+    background-color: var(--tertiary-bgcolor) !important;
     border: none;
     padding: 10px 20px;
     font-weight: var(--font-weight-semi-bold);
+    color: var(--tertiary-color) !important;
 }
 /* Chat Part End */
 
@@ -676,6 +695,47 @@ body{
 /* Admin Sidebar Part End */
 
 /* Responsive Part Start */
+
+@media (min-width: 1919.98px){
+
+    .hero .hero-img{
+        margin-top: 25px;
+    }
+
+    .header .navbar-nav .nav-item a {
+        font-size: 18px;
+        font-weight: var(--font-weight-medium);
+    }
+    
+    .button-primary{
+        font-size: 18px;
+    }
+
+    .nav-logo{
+        width: 12%;
+    }
+
+    .hero .text h1{
+        font-size: 38px;
+        /* font-family: var(--font-Hind-Vadodara), sans-serif; */
+        font-family: sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+    
+    .hero .text h1 span{
+        font-size: 56px;
+        line-height: 55px;
+        /* color: var(--fifth-color); */
+        /* font-weight: bold; */
+    }
+
+}
+
 @media (max-width: 991.98px){
 
     .nav-logo{
@@ -719,7 +779,7 @@ body{
         margin-top: 20px;
     }
 
-    .btn-primary{
+    .button-primary{
         padding: 10px 16px;
     }
 
