@@ -1,5 +1,5 @@
 import {ObjectId} from "mongodb";
-import UsersModel from "../../models/UsersModel.js";
+import UsersModel from "../../models/user/UsersModel.js";
 
 export const UserEmailService = async (req, res) => {
     try{
