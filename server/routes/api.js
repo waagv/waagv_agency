@@ -2,6 +2,8 @@ import express from 'express';
 const router = express.Router();
 
 import AuthMiddleware from "../app/middlewares/AuthMiddleware.js";
+import upload from "../app/middlewares/FileUpload.js";
+
 import * as UsersController from '../app/controllers/users/UsersController.js';
 import * as HeroController from '../app/controllers/hero/HeroController.js';
 
@@ -15,7 +17,11 @@ router.post('/ResetPassword', UsersController.ResetPassword);
 router.post('/UpdateProfile', AuthMiddleware, UsersController.UpdateProfile);
 
 // Hero Routes
-router.post('/Create', AuthMiddleware, HeroController.Create);
+router.post('/CreateContent', AuthMiddleware, HeroController.CreateContent);
+router.post('/UpdateContent/:id', AuthMiddleware, HeroController.UpdateContent);
+router.get('/ReadContent/:id', AuthMiddleware, HeroController.ReadContent);
+router.post('/DeleteContent/:id', AuthMiddleware, HeroController.DeleteContent);
+router.post('/ImageUpload/:id', AuthMiddleware, upload.single('image') , HeroController.ImageUpload);
 
 
 export default router;
