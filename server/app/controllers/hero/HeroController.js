@@ -1,6 +1,6 @@
 import {
     HeroCreateService,
-    HeroDeleteService, HeroImageUploadService,
+    HeroDeleteService, HeroImageDeleteService, HeroImageUploadService,
     HeroReadService,
     HeroUpdateService
 } from "../../services/hero/HeroService.js";
@@ -32,6 +32,12 @@ export const DeleteContent = async (req, res) => {
 // Image Upload
 export const ImageUpload = async (req, res) => {
     const result = await HeroImageUploadService(req, res);
+    res.json(result);
+}
+
+// Single Image Delete
+export const ImageDelete = async (req, res) => {
+    const result = await HeroImageDeleteService(req, res);
     res.json(result);
 }
 
