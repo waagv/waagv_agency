@@ -1,8 +1,9 @@
 import React, {useEffect} from "react";
 import Slider from "react-slick";
 import mozahid from "../assets/images/mozahid-bg.png";
-import atikur from "../assets/images/atikur_rahman.png";
-import image1 from "../assets/images/hero.png";
+import atikur from "../assets/images/atikur.png";
+import imtiaj from "../assets/images/full-stack.png";
+import samia from "../assets/images/ui-designer.png";
 import ScrollReveal from "scrollreveal";
 
 function SampleNextArrow(props) {
@@ -98,22 +99,17 @@ const Team = () => {
                     <div className="team-details">
                         <img src={atikur} alt="image"/>
                         <h5>Atikur Rahman</h5>
-                        <p>Co-Founder & CTO | Full-stack Developer</p>
+                        <p>Founder & CTO | Full-stack Developer</p>
                     </div>
                     <div className="team-details">
-                        <img src={image1} alt="image"/>
-                        <h5>Mark Straw</h5>
-                        <p>Mern Developer</p>
+                        <img src={imtiaj} alt="image"/>
+                        <h5>Imtiaj Ahmed</h5>
+                        <p>Backend Engineer</p>
                     </div>
                     <div className="team-details">
-                        <img src={image1} alt="image"/>
-                        <h5>Danis Lee</h5>
+                        <img src={samia} alt="image"/>
+                        <h5>Samin Amin</h5>
                         <p>Ui/Ux Designer</p>
-                    </div>
-                    <div className="team-details">
-                        <img src={image1} alt="image"/>
-                        <h5>Michell Mars</h5>
-                        <p>Backend Developer</p>
                     </div>
                 </Slider>
             </div>

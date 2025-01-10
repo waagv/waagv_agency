@@ -46,8 +46,8 @@ const Hero = () => {
                         <div className="text sm_center">
                             <h1>Empowering your <br /> <span>online venture</span></h1>
                             <p>Take control of your online success with a reliable web development agency. Stand out with a professionally built website crafted to grow your business.</p>
-                            <Link to='/' >
-                                <span className="btn button-primary">Contact Us</span>
+                            <Link to='/contact' >
+                                <span className="btn button-primary">Get in touch</span>
                             </Link>
                         </div>
                     </div>

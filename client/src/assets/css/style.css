@@ -184,7 +184,7 @@ body{
 }
 
 .hero .text a{
-    color: var(--fourth-color);
+    color: var(--tertiary-color);
 }
 
 .hero .hero-img{
@@ -464,6 +464,7 @@ body{
 /* Testimonial Part End */
 
 /* Team Part Start */
+
 .team .text h2{
     font-family: var(--font-Hind-Vadodara), sans-serif;
     font-weight: var(--font-weight-semi-bold);
@@ -601,7 +602,29 @@ body{
 
 
 /* All Project Part Starts */
-.allProjects .text h2{
+
+.project-box{
+    padding: 0;
+}
+
+.project-box a{
+    display: flex;
+    justify-content: center;
+}
+
+.work .project{
+    padding: 0 40px;
+}
+
+.work .text h2{
+    color: var(--secondary-color);
+}
+
+.work .text p{
+    color: var(--paragraph-color);
+}
+
+/* .allProjects .text h2{
     font-family: var(--font-Hind-Vadodara), sans-serif;
     font-weight: bold;
 }
@@ -658,13 +681,41 @@ body{
 
 .allProjects .image-bg:hover .overlay {
     left: 0;
-}
+} */
+
 /* All Project Part End */
 
 /* Contact Part Start */
-.contact .text h2{
+.contact-form .text h2{
+    font-weight: var(--font-weight-semi-bold);
     font-family: var(--font-Hind-Vadodara), sans-serif;
+    color: var(--primary-color);
+    letter-spacing: .5px;
 }
+
+.contact-form .text h2 span{
+    color: var(--fourth-color);
+}
+
+
+.contact-form .text p{
+    color: var(--paragraph-color);
+    letter-spacing: .2px;
+}
+
+.contact-form .contact-box{
+    margin-top: 40px;
+}
+
+.contact-box input,
+.contact-box textarea{
+    letter-spacing: .5px;
+    font-weight: var(--font-weight-semi-bold);
+    padding: 15px 0 15px 15px;
+    background-color: var(--fourth-bgcolor);
+    border: none;
+}
+
 /* Contact Part End */
 
 /* Admin NavBar Part Start */
@@ -855,7 +906,7 @@ body{
     .work .work-box h2{
         font-size: 26px;
         position: absolute;
-        margin-top: 0px;
+        margin-top: -15px;
         /* left: 190px; */
         left: 50%;
         transform: translate(-50%);
@@ -864,7 +915,7 @@ body{
     .work .work-box p{
         font-size: 14px;
         position: absolute;
-        top: 80px;
+        top: 70px;
         /* left: 140px; */
         left: 50%;
         transform: translate(-50%);
@@ -934,6 +985,28 @@ body{
     .footer_address{
         margin-top: 20px;   
     }
+
+    .contact-form .text{
+        text-align: center;
+    }
+
+    .contact-form .text h2{
+        font-size: 28px;
+    }
+
+    .contact-box{
+        padding: 0 30px;
+    }
+
+    .contact-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .work .text h2{
+        font-size: 28px;
+    }
+
 }
 
 @media(max-width: 767.98px){
@@ -1084,7 +1157,7 @@ body{
     }
 
     .work .work-box h2{
-        top: 50px;
+        top: 60px;
         /* left: 120px; */
         /* left: 50%; */
         /* transform: translate(-50%); */
@@ -1187,6 +1260,21 @@ body{
         width: 20%;
     }
 
+    
+    .contact-form .text p{
+        font-size: 14px;
+    }
+
+    .contact-box input,
+    .contact-box textarea{
+        font-size: 14px;
+    }
+
+    .work .text h2{
+        font-size: 24px;
+    }
+
+
 
 }
 
@@ -1254,12 +1342,12 @@ body{
         width: 85%;
     }
     .work .work-box h2{
-        margin-top: 5px;
+        /* margin-top: 5px; */
         /* left: 125px; */
     }
 
     .work .work-box p{
-        margin-top: 5px;
+        /* margin-top: 5px; */
         /* left: 75px; */
     }
 
@@ -1270,6 +1358,11 @@ body{
     .footer .container{
         padding: 0 40px;
     }
+
+    .work .text{
+        padding: 0 30px;
+    }
+
 }
 
 @media(max-width: 480.98px){
@@ -1279,6 +1372,15 @@ body{
     }
     .work .slick-slider {
         left: 5%;
+    }
+    .work .work-box h2{
+        margin-top: -20px;
+        /* left: 125px; */
+    }
+
+    .work .work-box p{
+        margin-top: -5px;
+        /* left: 75px; */
     }
 
     .testimonial .slick-slider{
@@ -1291,6 +1393,9 @@ body{
 
     .footer-logo{
         width: 30%;
+    }
+    .contact-form .text{
+        padding: 0 30px;
     }
 }
 
