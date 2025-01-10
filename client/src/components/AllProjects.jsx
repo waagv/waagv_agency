@@ -4,14 +4,14 @@ import {Link} from "react-router-dom";
 
 const AllProjects = () => {
     return (
-        <section className="allProjects py-5">
+        <section className="work py-5">
             <div className="container">
                 <div className="text">
-                    <h2>All Projects</h2>
+                    <h2>Most Recent Works</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-                <div className="row">
-                    <div className="col-12 col-md-6 col-lg-4 mt-4">
+                <div className="row project">
+                    <div className="col-12 col-md-6 col-lg-4 mt-4 project-box">
                         <Link to='/'>
                             <div className="image-bg">
                                 <img src={image1} alt="image"/>
@@ -22,7 +22,7 @@ const AllProjects = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4 mt-4">
+                    <div className="col-12 col-md-6 col-lg-4 mt-4 project-box">
                         <Link to='/'>
                             <div className="image-bg">
                                 <img src={image1} alt="image"/>
@@ -33,7 +33,7 @@ const AllProjects = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4 mt-4">
+                    <div className="col-12 col-md-6 col-lg-4 mt-4 project-box">
                         <Link to='/'>
                             <div className="image-bg">
                                 <img src={image1} alt="image"/>
@@ -44,7 +44,7 @@ const AllProjects = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4 mt-4">
+                    <div className="col-12 col-md-6 col-lg-4 mt-4 project-box">
                         <Link to='/'>
                             <div className="image-bg">
                                 <img src={image1} alt="image"/>
@@ -55,7 +55,7 @@ const AllProjects = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4 mt-4">
+                    <div className="col-12 col-md-6 col-lg-4 mt-4 project-box">
                         <Link to='/'>
                             <div className="image-bg">
                                 <img src={image1} alt="image"/>

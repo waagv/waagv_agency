@@ -72,7 +72,7 @@ const Testimonial = () => {
     };
 
     return (
-        <section className="testimonial py-5">
+        <section className="testimonial py-5" id="testimonials">
             <div className="container">
                 <div className="text">
                     <h2>Our Testimonials</h2>
