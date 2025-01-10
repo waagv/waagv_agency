@@ -2,7 +2,7 @@ export const PORT = 8000
 
 
 export const IMAGE_PATH = "http://localhost:8000"
-export  const DEFAULT_IMAGE =`${IMAGE_PATH}/uploads/hero_default.png`
+export  const DEFAULT_IMAGE =`${IMAGE_PATH}/uploads/default.png`
 
 export const DATABASE = 'mongodb+srv://mdatikurrahman00022:4kdGoHB0UgyrmHqr@cluster0.2xurj.mongodb.net/waagv?retryWrites=true&w=majority&appName=Cluster0'
 export const JWT_KEY = 'ABC12341241234'

@@ -1,16 +1,16 @@
-import HeroModel from "../../models/hero/HeroModel.js";
-import {ObjectId} from "mongodb";
 import fs from 'fs';
 import path from "path";
 import { fileURLToPath } from 'url';
 import {DEFAULT_IMAGE, IMAGE_PATH} from "../../config/config.js";
+import WorkModel from "../../models/work/WorkModel.js";
+import {ObjectId} from "mongodb";
 
 // Get the directory name
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Create Content
-export const HeroCreateService = async (req, res) => {
+export const WorkCreateService = async (req, res) => {
     try{
 
         const role = req.headers['role'];
@@ -18,9 +18,9 @@ export const HeroCreateService = async (req, res) => {
 
         if( role === 'admin' ){
 
-            await HeroModel.updateOne({role: role}, {$set: reqBody}, {upsert: true, new: true});
+            await WorkModel.updateOne({role: role}, {$set: reqBody}, {upsert: true, new: true});
 
-            return { status: 'success', message: 'Hero content created successfully!' };
+            return { status: 'success', message: 'Work content created successfully!' };
 
         }else{
             return { status: 'fail', message: 'You are not authorized!' }
@@ -32,19 +32,18 @@ export const HeroCreateService = async (req, res) => {
     }
 }
 
-// Update Content
-export const HeroUpdateService = async (req, res) => {
+// Create Content
+export const WorkUpdateService = async (req, res) => {
     try{
 
         const role = req.headers['role'];
-        const id = new ObjectId(req.params['id']);
         const reqBody = req.body;
 
         if( role === 'admin' ){
 
-            await HeroModel.updateOne({role: role, _id: id}, {$set: reqBody}, {new: true});
+            await WorkModel.updateOne({role: role}, {$set: reqBody}, {new: true});
 
-            return { status: 'success', message: 'Hero content updated successfully!' };
+            return { status: 'success', message: 'Work content updated successfully!' };
 
         }else{
             return { status: 'fail', message: 'You are not authorized!' }
@@ -57,7 +56,7 @@ export const HeroUpdateService = async (req, res) => {
 }
 
 // Read Content
-export const HeroReadService = async (req, res) => {
+export const WorkReadService = async (req, res) => {
     try{
 
         const role = req.headers['role'];
@@ -68,12 +67,12 @@ export const HeroReadService = async (req, res) => {
 
         if( role === 'admin' ){
 
-            const data = await HeroModel.aggregate([
+            const data = await WorkModel.aggregate([
                 MatchingStage,
                 ProjectionStage
             ]);
 
-            return { status: 'success', message: 'Hero content read successfully!', data: data };
+            return { status: 'success', message: 'Work content read successfully!', data: data };
 
         }else{
             return { status: 'fail', message: 'You are not authorized!' }
@@ -86,7 +85,7 @@ export const HeroReadService = async (req, res) => {
 }
 
 // Delete Content
-export const HeroDeleteService = async (req, res) => {
+export const WorkDeleteService = async (req, res) => {
     try{
 
         const role = req.headers['role'];
@@ -94,9 +93,9 @@ export const HeroDeleteService = async (req, res) => {
 
         if( role === 'admin' ){
 
-            await HeroModel.deleteOne({_id: id});
+            await WorkModel.deleteOne({_id: id});
 
-            return { status: 'success', message: 'Hero content deleted successfully!', };
+            return { status: 'success', message: 'Work content deleted successfully!', };
 
         }else{
             return { status: 'fail', message: 'You are not authorized!' }
@@ -108,13 +107,12 @@ export const HeroDeleteService = async (req, res) => {
     }
 }
 
-
 // Hero Image Upload
-export const HeroImageUploadService = async (req, res) => {
+export const WorkImageUploadService = async (req, res) => {
     try {
         const role = req.headers['role'];
         const id = new ObjectId(req.params['id']);
-        const data = await HeroModel.aggregate([
+        const data = await WorkModel.aggregate([
             { $match: { _id: id } },
             { $project: { "_id": 0, "role": 0} }
         ]);
@@ -148,7 +146,7 @@ export const HeroImageUploadService = async (req, res) => {
                 const imagePath = req.file.path;
                 const image = `${IMAGE_PATH}/${imagePath}`;
 
-                await HeroModel.updateOne({ "_id": id }, { $set: { image: image } });
+                await WorkModel.updateOne({ "_id": id }, { $set: { image: image } });
                 return { status: 'success', message: 'Image uploaded successfully!' };
             } else {
                 return { status: 'fail', message: 'Hero content not found!' };
@@ -162,14 +160,13 @@ export const HeroImageUploadService = async (req, res) => {
     }
 };
 
-
 // Delete Single Image
-export const HeroImageDeleteService = async (req, res) => {
+export const WorkImageDeleteService = async (req, res) => {
     try {
         const role = req.headers['role'];
         const id = new ObjectId(req.params['id']);
 
-        const data = await HeroModel.aggregate([
+        const data = await WorkModel.aggregate([
             { $match: { _id: id } },
             { $project: { "_id": 0, "role": 0} }
         ]);
@@ -191,7 +188,7 @@ export const HeroImageDeleteService = async (req, res) => {
                             return { status: 'fail', message: 'Error file deleting!' };
                         }
                     });
-                    await HeroModel.updateOne({_id: id},{$set: {image: DEFAULT_IMAGE}});
+                    await WorkModel.updateOne({_id: id},{$set: {image: DEFAULT_IMAGE}});
                 }else {
                     return { status: 'fail', message: 'File not found!' };
                 }
@@ -207,6 +204,10 @@ export const HeroImageDeleteService = async (req, res) => {
         return { status: 'error', message: e.message || 'Something went wrong!' };
     }
 };
+
+
+
+
 
 
 
