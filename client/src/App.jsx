@@ -5,10 +5,13 @@ import AboutUsPage from "./pages/AboutUsPage.jsx";
 import ServicePage from "./pages/ServicePage.jsx";
 import ContactUsPage from "./pages/ContactUsPage.jsx";
 import AllProjectPage from "./pages/AllProjectPage.jsx";
-import Dashboard from "./pages/AdminDashboard/Dashboard.jsx";
+import DashboardPage from "./pages/AdminDashboard/DashboardPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import RegistrationPage from "./pages/RegistrationPage.jsx";
+import HeroDetailsPage from "./pages/AdminDashboard/Hero/HeroDetailsPage.jsx";
+import HeroCreatePage from "./pages/AdminDashboard/Hero/HeroCreatePage.jsx";
+import HeroUpdatePage from "./pages/AdminDashboard/Hero/HeroUpdatePage.jsx";
 
 const App = () => {
     return (
@@ -21,8 +24,13 @@ const App = () => {
                 <Route path="/contact" element={<ContactUsPage />} />
                 <Route path="/registration" element={<RegistrationPage />} />
                 <Route path="/login" element={<LoginPage />} />
-                <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="*" element={<NotFoundPage />} />
+
+                {/* Admin Dashboard Route */}
+                <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/dashboard/herodetails" element={<HeroDetailsPage />} />
+                <Route path="/dashboard/createhero" element={<HeroCreatePage />} />
+                <Route path="/dashboard/updatehero" element={<HeroUpdatePage />} />
             </Routes>
         </BrowserRouter>
     );

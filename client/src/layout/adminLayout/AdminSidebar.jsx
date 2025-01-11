@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from "../../assets/images/hero.png";
+import Menu from "./Menu.jsx";
+import {Link} from "react-router-dom";
 
 const AdminSidebar = () => {
     return (
@@ -13,13 +15,15 @@ const AdminSidebar = () => {
                  id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div className="offcanvas-header">
                     <div className="logo">
-                        <img src={logo} alt="logo"/>
+                        <Link to="/dashboard">
+                            <img src={logo} alt="logo"/>
+                        </Link>
                     </div>
                     <h5>Admin Dashboard</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
-
+                    <Menu/>
                 </div>
             </div>
         </section>
