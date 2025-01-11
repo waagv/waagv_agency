@@ -12,14 +12,8 @@ import * as WorkController from '../app/controllers/work/WorkController.js';
 import * as TestimonialController from '../app/controllers/testimonial/TestimonialController.js';
 import * as TeamController from '../app/controllers/team/TeamController.js';
 import * as MindController from '../app/controllers/mind/MindController.js';
-import * as AllProjectController from '../app/controllers/allProjects/AllProjectController.js'
-import {
-    AllProjectImageDelete,
-    AllProjectImageUpload,
-    DeleteAllProjectContent,
-    ReadAllProjectContent,
-    UpdateAllProjectContent
-} from "../app/controllers/allProjects/AllProjectController.js";
+import * as AllProjectController from '../app/controllers/allProjects/AllProjectController.js';
+import * as ContactController from '../app/controllers/contact/ContactController.js';
 
 
 // Authentication
@@ -86,6 +80,9 @@ router.get('/ReadAllProjectContent/:id', AuthMiddleware, AllProjectController.Re
 router.post('/DeleteAllProjectContent/:id', AuthMiddleware, AllProjectController.DeleteAllProjectContent);
 router.post('/AllProjectImageUpload/:id', AuthMiddleware, upload.single('image') , AllProjectController.AllProjectImageUpload);
 router.post('/AllProjectImageDelete/:id/:filename', AuthMiddleware, AllProjectController.AllProjectImageDelete);
+
+// Send Message
+router.post('/SendMessage', ContactController.SendMessage);
 
 
 export default router;
