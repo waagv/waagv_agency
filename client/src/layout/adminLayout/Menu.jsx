@@ -26,7 +26,7 @@ const Menu = () => {
                         <div className="accordion-body">
                             <ul className="list-group">
                                 <NavLink
-                                    to="/dashboard/herodetails"
+                                    to={`/dashboard/herodetails/:id`}
                                     className={({ isActive }) =>
                                         `list-group-item ${isActive ? 'active' : ''}`}
                                 >

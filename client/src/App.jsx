@@ -28,7 +28,7 @@ const App = () => {
 
                 {/* Admin Dashboard Route */}
                 <Route path="/dashboard" element={<DashboardPage />} />
-                <Route path="/dashboard/herodetails" element={<HeroDetailsPage />} />
+                <Route path="/dashboard/herodetails/:id" element={<HeroDetailsPage />} />
                 <Route path="/dashboard/createhero" element={<HeroCreatePage />} />
                 <Route path="/dashboard/updatehero" element={<HeroUpdatePage />} />
             </Routes>
