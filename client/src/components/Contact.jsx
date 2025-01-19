@@ -40,7 +40,7 @@ const Contact = () => {
                                 <div className="mb-3">
                                     {/* <label htmlFor="exampleInputContactNumber" className="form-label">Contact
                                         Number</label> */}
-                                    <input type="email" className="form-control" id="exampleInputContactNumber"
+                                    <input type="text" className="form-control" id="exampleInputContactNumber"
                                            placeholder="Contact Number" aria-describedby="emailHelp"/>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                                       placeholder="Your Message..." aria-describedby="emailHelp"></textarea>
                         </div>
                         <div className="contact-button">
-                            <button type="submit" className="btn button-primary">Submit</button>
+                            <button type="submit" aria-label="submit button" className="btn button-primary">Submit</button>
                         </div>
                     </form>
                 </div>

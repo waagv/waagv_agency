@@ -50,7 +50,7 @@ const Registration = () => {
                             <input type="email" className="form-control" id="exampleInputPassword"
                                    placeholder="Enter Password..." aria-describedby="emailHelp"/>
                         </div>
-                        <button type="submit" className="btn btn-success">Register</button>
+                        <button aria-label="register button" type="submit" className="btn btn-success">Register</button>
                     </form>
                 </div>
             </div>

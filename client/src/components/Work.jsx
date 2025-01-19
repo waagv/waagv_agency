@@ -1,6 +1,8 @@
 import React, {Component, useEffect} from "react";
 import Slider from "react-slick";
-import image1 from "../assets/images/hero.png";
+import project1 from "../assets/images/project-1.webp";
+import project2 from "../assets/images/project-2.webp";
+import project3 from "../assets/images/project-3.webp";
 import {Link} from "react-router-dom";
 import ScrollReveal from "scrollreveal";
 
@@ -91,41 +93,41 @@ const Work = () => {
                     </div>
                     <Slider {...settings}>
                         <div className="image-bg">
-                            <Link to='/'>
-                                <img src={image1} alt="image"/>
-                                <p>Booking App</p>
+                            <Link target="blank" to='https://608e8c718ee80a405652c5d6--peaceful-wozniak-e797b8.netlify.app/'>
+                                <img src={project1} loading="lazy" alt="image"/>
+                                <p>Stock Room</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
                             </Link>
                         </div>
                         <div className="image-bg">
-                            <Link to='/'>
-                                <img src={image1} alt="image"/>
-                                <p>Booking App</p>
+                            <Link target="blank" to='https://al-mozahid.github.io/PH-Assignment-04/index.html'>
+                                <img src={project2} loading="lazy" alt="image"/>
+                                <p>Booking Flisht</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
                             </Link>
                         </div>
                         <div className="image-bg">
-                            <Link to='/'>
-                                <img src={image1} alt="image"/>
-                                <p>Booking App</p>
+                            <Link target="blank" to='https://superlative-cobbler-a4e027.netlify.app/'>
+                                <img src={project3} loading="lazy" alt="image"/>
+                                <p>Restaurant</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
                             </Link>
                         </div>
-                        <div className="image-bg">
+                        {/* <div className="image-bg">
                             <Link to='/'>
-                                <img src={image1} alt="image"/>
+                                <img src={project1} alt="image"/>
                                 <p>Booking App</p>
                                 <div className="overlay">
                                     <p>Live Demo</p>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
                     </Slider>
                 </div>
             </div>

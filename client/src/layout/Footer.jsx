@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import image from "../assets/images/yellow_png.png";
+import image from "../assets/images/yellow_png.webp";
 
 const Footer = () => {
     return (
@@ -39,14 +39,14 @@ const Footer = () => {
                 <hr/>
                 <div className="icon-box d-flex justify-content-center">
                     <div className="icon mt-4">
-                        <Link to="/">
-                            <span><i className="bi bi-facebook"></i></span>
-                        </Link>
-                        <Link to="/">
+                        <Link aria-label="linkedin profile" target='blank' to="https://www.linkedin.com/company/waagv">
                             <span><i className="bi bi-linkedin"></i></span>
                         </Link>
-                        <Link to="/">
-                            <span><i className="bi bi-whatsapp"></i></span>
+                        <Link aria-label="twitter X profile" target='blank' to="https://x.com/waagvit">
+                            <span><i className="bi bi-twitter-x"></i></span>
+                        </Link>
+                        <Link aria-label="instagram profile" target='blank' to="https://www.instagram.com/waagvit/">
+                            <span><i className="bi bi-instagram"></i></span>
                         </Link>
                     </div>
                 </div>
