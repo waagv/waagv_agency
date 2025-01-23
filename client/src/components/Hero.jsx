@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import image from '../assets/images/hero_image.svg';
+import image from '../assets/images/web_design_&_development.svg';
 import { Link } from "react-router-dom";
 import ScrollReveal from 'scrollreveal';
 
@@ -47,13 +47,13 @@ const Hero = () => {
                             <h1>Empowering your <br /> <span>online venture</span></h1>
                             <p>Take control of your online success with a reliable web development agency. Stand out with a professionally built website crafted to grow your business.</p>
                             <Link to='/contact' >
-                                <span className="btn button-primary">Get in touch</span>
+                                <span  aria-label="get in touch button" className="btn button-primary">Get in touch</span>
                             </Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 mt-sm-5">
                         <div className="hero-img d-flex align-items-center justify-content-lg-end justify-content-sm-center">
-                            <img className="img-fluid" src={image} alt="hero image" />
+                            <img className="img-fluid" src={image} loading='lazy' alt="web design and development" />
                         </div>
                     </div>
                 </div>

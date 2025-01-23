@@ -81,27 +81,18 @@ const Testimonial = () => {
                 <Slider {...settings}>
                     <div className="comment p-4 bg-light">
                         <span><i class="bi bi-quote"></i></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
-                            provident ratione voluptatibus. </p>
-                        <h5><span>-</span>Jhon Doe</h5>
+                        <p>The website WAAGV created for us is visually appealing and user-friendly. Their expertise and dedication were evident in every step of the process.</p>
+                        <h5><span>-</span>Raaf Singloree</h5>
                     </div>
                     <div className="comment p-4 bg-light">
                         <span><i class="bi bi-quote"></i></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
-                            provident ratione voluptatibus. </p>
-                        <h5><span>-</span>Michell Mars</h5>
+                        <p>They provided top-notch service. They were responsive, knowledgeable, and ensured the website met all our requirements. Excellent work!</p>
+                        <h5><span>-</span>Nahin Sultan</h5>
                     </div>
                     <div className="comment p-4 bg-light">
                         <span><i class="bi bi-quote"></i></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
-                            provident ratione voluptatibus. </p>
-                        <h5><span>-</span>Mark Straw</h5>
-                    </div>
-                    <div className="comment p-4 bg-light">
-                        <span><i class="bi bi-quote"></i></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque nesciunt
-                            provident ratione voluptatibus. </p>
-                        <h5><span>-</span>Danis Lee</h5>
+                        <p>Paid close attention to my needs and ensured the website reflected my style and goals. They truly care about their clients.</p>
+                        <h5><span>-</span>Berry Pomeroy</h5>
                     </div>
                 </Slider>
             </div>

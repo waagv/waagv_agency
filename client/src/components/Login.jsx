@@ -21,7 +21,7 @@ const Login = () => {
                             <input type="email" className="form-control" id="exampleInputPassword"
                                    placeholder="Enter Password..." aria-describedby="emailHelp"/>
                         </div>
-                        <button type="submit" className="btn btn-success">Login</button>
+                        <button aria-label="login button" type="submit" className="btn btn-success">Login</button>
                     </form>
                 </div>
             </div>

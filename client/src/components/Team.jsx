@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import Slider from "react-slick";
-import mozahid from "../assets/images/mozahid-bg.png";
-import atikur from "../assets/images/atikur.png";
-import imtiaj from "../assets/images/full-stack.png";
-import samia from "../assets/images/ui-designer.png";
+import mozahid from "../assets/images/mozahid_waagv.webp"
+import atikur from "../assets/images/atikurweb_waagv.webp"
+import imtiaj from "../assets/images/full-stack_waagv.png";
+import samia from "../assets/images/ui-designer_waagv.png";
 import ScrollReveal from "scrollreveal";
 
 function SampleNextArrow(props) {
@@ -92,22 +92,22 @@ const Team = () => {
                 </div>
                 <Slider {...settings}>
                     <div className="team-details">
-                        <img src={mozahid} alt="image"/>
+                        <img src={mozahid} alt="founder and ceo"/>
                         <h5>Al Mozahid</h5>
                         <p>Founder & CEO | Front-end Developer</p>
                     </div>
                     <div className="team-details">
-                        <img src={atikur} alt="image"/>
+                        <img src={atikur} alt="founder and cto"/>
                         <h5>Atikur Rahman</h5>
                         <p>Founder & CTO | Full-stack Developer</p>
                     </div>
                     <div className="team-details">
-                        <img src={imtiaj} alt="image"/>
+                        <img src={imtiaj} alt="backend engineer"/>
                         <h5>Imtiaj Ahmed</h5>
                         <p>Backend Engineer</p>
                     </div>
                     <div className="team-details">
-                        <img src={samia} alt="image"/>
+                        <img src={samia} alt="ui/ux designer"/>
                         <h5>Samin Amin</h5>
                         <p>Ui/Ux Designer</p>
                     </div>
