@@ -27,4 +27,4 @@ const SendEmail = async (EmailTo, EmailFrom, EmailText, EmailSubject) => {
 
 }
 
-export default SendEmail;
+export default SendEmail; 

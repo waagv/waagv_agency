@@ -13,7 +13,7 @@ const Contact = () => {
             ...FormValues,
             [InputName]: InputValue,
         }));
-    };
+    }; 
 
     const formSubmit = async (e) => {
         e.preventDefault();
@@ -43,7 +43,7 @@ const Contact = () => {
             toast.success("Message received successfully! Please check your email for reply!");
             setFormValue(initialFormValue);
         } catch (error) {
-            // console.error(error);
+            console.error(error);
             toast.error("Failed to submit the form.");
         }
     };
