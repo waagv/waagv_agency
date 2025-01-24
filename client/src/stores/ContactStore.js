@@ -5,7 +5,7 @@ const ContactStore = create((set) => ({
     contactList: null,
     contactListFormRequest: async (postBody) => {
         try {
-            const res = await axios.post(`http://localhost:8000/api/v1/SendMessage`, postBody);
+            const res = await axios.post(`https://www.waagv.com/api/v1/SendMessage`, postBody);
             if (res.data.status === "success") {
                 set({ contactList: res.data.data });
             }
