@@ -25,7 +25,7 @@ const __dirname = path.dirname(__filename);
 
 // App use default middlewares
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://www.waagv.com',
     credentials: true, // Allow cookies to be sent
 }));
 
