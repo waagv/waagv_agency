@@ -17,7 +17,7 @@ const SendEmail = async (EmailTo, EmailFrom, EmailText, EmailSubject) => {
     });
 
     const mailOptions = {
-        from: `${EmailFrom} <a@gamil.com>`,
+        from: `${EmailFrom} <waagvit@gmail.com>`,
         to: EmailTo,
         subject: EmailSubject,
         text: EmailText,

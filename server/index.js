@@ -25,9 +25,10 @@ const __dirname = path.dirname(__filename);
 
 // App use default middlewares
 app.use(cors({
-    origin: 'https://www.waagv.com',
-    credentials: true, // Allow cookies to be sent
+    origin: ['https://www.waagv.com'], // Allow your deployed frontend
+    credentials: true, // Allow cookies and authorization headers
 }));
+
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(express.json({limit: MAX_JSON_SIZE}));

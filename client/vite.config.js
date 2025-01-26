@@ -9,7 +9,7 @@ export default defineConfig({
       '/api/v1': {
         target: "https://www.waagv.com",
         changeOrigin: true,
-        secure: false,
+        secure: true,
         credentials: true,
       }
     }

@@ -23,10 +23,10 @@ export const UserLoginService = async (req, res) => {
                     const token = await TokenEncode(data[0]['_id'],data[0]['email'],data[0]['role']);
 
                     const options = {
-                        maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+                        maxAge: 30 * 24 * 60 * 60 * 1000,
                         httpOnly: true,
-                        sameSite: "lax",
-                        secure: false,
+                        sameSite: "none",
+                        secure: true,
                     };
                     res.cookie('Token', token, options);
 
